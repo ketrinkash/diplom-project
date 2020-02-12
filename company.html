@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>О компании</title>
+    <meta name="description" content="Мы современная Юридическая фирма, помогающая перспективным стартапам, фрилансерам и малому бизнесу.">
+	<meta name="keywords" content="юристы Юридическая компания фирма стартап малый бизнес Фриланс фрилансерам бизнесу право защита ">
+	<link rel="icon" href="img/JC.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/JC.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__wrap">
+            <button class="modal__close">
+                X
+            </button>
+            <h2 class="modal__title">
+                Отправьте заявку
+            </h2>
+            <p class="modal__text">
+               И наши специалисты свяжутся с вами ближайшее время для оказания профессиональной помощи!
+            </p>
+            <form action="#" class="modal__form">
+                <div class="form-field">
+                  <label for="name">
+                        Имя
+                    </label>
+                    <input type="text" class="modal__input" name="firstName" required>  
+                </div>
+                <div class="form-field">
+                   <label for="tel">
+                        Телефон
+                    </label>
+                    <input type="tel" class="modal__input" name="phoneNumber" required> 
+                </div>
+                <button type="submit" class="btn modal-btn" id="modal-submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="menu-mobile"> <!--Мобильное меню -->
+        <div class="mobile-wrap d-flex flex-column h-100">
+            <div class="heading d-flex  justify-content-between">
+                <a href="#" class="logo">
+                    <img src="img/Логотипьменю.png" alt="Логотип компании">
+                </a>
+                <button class="close" id="close"> 
+                    X
+                </button>
+            </div>
+            <nav>
+                <ul class="mobile-list">
+                    <li class="mobile-list__item mobile-list__item_active" id="index">
+                           Главная
+                    </li>
+                    <li class="mobile-list__item" id="company">
+                            О компании
+                    </li>
+                    <li class="mobile-list__item">
+                             Услуги
+                    </li>
+                    <li class="mobile-list__item">
+                             Контакты
+                    </li>
+                    <li class="mobile-list__item">
+                           Отзывы
+                    </li>
+                </ul> 
+            </nav>
+            <div class="phone d-flex phone-mobile mt-auto">
+                <div class="phone__icon">
+                    <a href="tel:+74955672815">
+                        <img src="img/Vector.png" alt="Звонок">
+                    </a>
+                </div>
+                <div class="phone__text">
+                    <p class="phone__line">
+                    <a href="tel:+74955672815">
+                        Заказать звонок
+                        </a> 
+                    </p>                           
+                    <a href="tel:+74955672815" class="phone">
+                        + 7 (495) 567-28-15
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div> <!--Мобильное меню -->
+    <header class="header header-innear">
+        <nav class="navigation">
+            <div class="container">
+                 <div class="row align-items-center">
+                    <div class="col-lg-3 col-auto">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="Логотип компании">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-auto d-none d-lg-block">
+                         <ul class="menu d-flex  align-items-center ">
+                            <li class="menu__item">
+                                  <a href="index.html" class="menu__link">
+                                      Главная
+                                  </a>
+                            </li>
+                             <li class="menu__item">
+                                 <a href="company.html" class="menu__link">
+                                     О компании
+                                 </a>
+                             </li>
+                             <li class="menu__item">
+                                 <a href="#" class="menu__link">
+                                      Услуги
+                                </a>
+                               </li>
+                              <li class="menu__item">
+                                 <a href="#" class="menu__link">
+                                     Контакты
+                                  </a>
+                             </li>
+                             <li class="menu__item">
+                                 <a href="#" class="menu__link">
+                                     Отзывы 
+                                 </a>
+                             </li>
+                        </ul>
+                     </div>
+                    <div class="col-lg-3 col-md-4 col-auto ml-md-auto d-none d-md-block">
+                        <div class="phone d-flex justify-content-center">
+                            <div class="phone__icon">
+                                  <a href="tel:+74955672815">
+                                    <img src="img/Vector.png" alt="Звонок">
+                                 </a>
+                            </div>
+                            <div class="phone__text">
+                                <p class="phone__line">
+                                    <a href="tel:+74955672815">
+                                        Заказать звонок
+                                    </a> 
+                                </p>                           
+                                <a href="tel:+74955672815" class="phone">
+                                    + 7 (495) 567-28-15
+                                </a>
+                           </div> 
+                        </div>
+                     </div> 
+                     <!-- Появление кнопки меню и самого меню через js-->
+                     <div class=" d-block d-lg-none ml-auto ml-md-0 col-auto ">
+                        <a href="#" class="burger">
+                            <img src="img/burger.png" alt="">
+                        </a>
+                     </div>
+                </div>
+            </div>
+        </nav>
+       <div class="head">
+           <div class="container">
+                <div class="row ">
+                    <div class=" col-sm-auto">
+                        <h1 class="head-title">
+                              О компании
+                         </h1>
+                    </div>
+                    <div class="col-sm-auto ml-auto">
+                        <div class="head-line">
+                            <p>
+                               <a href="index.html" class="head-line-link">
+                                 Главная /
+                             </a>
+                             О компании 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="choice">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="choice-item">
+                        <img src="img/image 6.jpg" alt="" class="choice-img img-fluid">
+                        <div class="choice-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                        <div class="choice-article">
+                            <h2 class="section-title">
+                                <span>Почему мы –</span>
+                                ПРАВИЛЬНЫЙ ВЫБОР ДЛЯ ВАС
+                            </h2>
+                            <div class="choice-text">
+                               <p>
+                                    JC - это юридическая фирма с полным спектром услуг, специализирующаяся на стартапах, фрилансерах и малом бизнесе.
+
+                                </p>
+                                <p>
+                                    Мы придерживаемся принципа, что первоклассный юрисконсульт должен быть доступен для компаний всех размеров, у нас инновационный подход к традиционной культуре юридической фирмы.
+                                </p>
+                                <p>
+                                   Наша команда опытных юристов предоставит необходимые советы и рекомендации, которые помогут вам ориентироваться в сложных и эмоциональных юридических ситуациях.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                         <div class="choice-director d-flex align-items-center">
+                            <img src="img/director 1.png" alt="" class="director-img">
+                            <div class="choice-director__text">
+                                <p>
+                                        Мы здесь, чтобы помочь вам построить и поддержать свою мечту.
+                                </p>
+                                <p>
+                                        Дмитрий Львович
+                                        <span>Директор компании</span> 
+                                </p>
+                                <img src="img/signature 1.png" alt="" class="signature-img">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="merits" id="merits">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="prog ">
+                        <div class="indicator">
+                            <img src="img/Индикатор.png" alt="">
+                            <span>
+                                100%
+                            </span>
+                        </div>
+                        <h5>
+                            Качество обслуживания
+                        </h5>
+                    </div>
+                </div>
+                 <div class="col-xl-3 order-1 order-sm-0 col-sm-6">
+                    <div class="prog">
+                        <div class="indicator">
+                            <img src="img/Индикатор1.png" alt="">
+                            <span>
+                                87%
+                            </span>
+                        </div>
+                        <h5>
+                            Довольных клиентов
+                        </h5>
+                    </div>
+                </div>
+                 <div class="col-xl-3 col-sm-6">
+                    <div class="prog ">
+                        <div class="indicator">
+                            <img src="img/Индикатор2.png" alt="">
+                            <span>
+                                66%
+                            </span>
+                        </div>
+                        <h5>
+                           Завершенных дел 
+                        </h5>
+                    </div>
+                </div>
+                 <div class="col-xl-3 order-1 col-sm-6">
+                    <div class="prog">
+                        <div class="indicator">
+                            <img src="img/Индикатор3.png" alt="">
+                            <span>
+                                31%
+                            </span>
+                        </div>
+                        <h5>
+                            Достигнутых целей
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="section-title">
+                        <span>Наша</span>
+                        Команда
+                    </h2>
+                </div>
+            </div>
+            <div class="team-wrap">
+               <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="team-card">
+                            <div class="team-card__wrapper">
+                            <img src="img/pers2.jpg" alt=""> 
+                            <p class="team-card__position">
+                                    Старший юрист
+                                </p>
+                            </div>
+                            <div class="team-card__wrap ml-auto justify-content-between">
+                                <h5>
+                                    Мария Юмашева
+                                </h5> 
+                                <div class="team-card__soc">
+                                    <a href="https://ru-ru.facebook.com/" target="_blank">
+                                        <img src="img/facebook2.png" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                                        <img src="img/inst2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="team-card">
+                            <div class="team-card__wrapper">
+                                <img src="img/pers3.jpg" alt="">
+                                <p class="team-card__position">
+                                Менеджер 
+                                </p>
+                            </div>
+                            <div class="team-card__wrap ml-auto justify-content-between">
+                                <h5>
+                                    Сергей Михайленко
+                                </h5>
+                                <div class="team-card__soc">
+                                    <a href="https://ru-ru.facebook.com/" target="_blank">
+                                        <img src="img/facebook2.png" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                                        <img src="img/inst2.png" alt="">
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="team-card">
+                            <div class="team-card__wrapper">
+                            <img src="img/pers1.jpg" alt="">
+                            <p class="team-card__position">
+                                Старший юрист 
+                                </p> 
+                            </div>
+                            <div class="team-card__wrap ml-auto justify-content-between">
+                                <h5>
+                                    Андрей Егоров
+                                </h5> 
+                                <div class="team-card__soc">
+                                    <a href="https://ru-ru.facebook.com/" target="_blank">
+                                        <img src="img/facebook2.png" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/?hl=ru" target="_blank">
+                                        <img src="img/inst2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="foot-soc d-sm-flex d-lg-block justify-content-between">
+                        <a href="#" class="logo">
+                            <img src="img/Логотип футер.png" alt="Логотип компании">
+                        </a>
+                        <ul class="foot-list d-flex align-items-center">
+                            <li class="foot-list__item">
+                                <a href="https://ru-ru.facebook.com/" target="_blank" class="foot-list__link">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="foot-list__item">
+                                <a href="#" target="_blank" class="foot-list__link">
+                                    <img src="img/Union.png" alt="">
+                                </a>
+                            </li>
+                            <li class="foot-list__item">
+                                <a href="https://www.instagram.com/accounts/login/?hl=ru" target="_blank" class="foot-list__link">
+                                    <img src="img/inst.png" alt="">
+                                </a>
+                            </li>
+                            <li class="foot-list__item">
+                                <a href="https://www.youtube.com/" target="_blank" class="foot-list__link">
+                                    <img src="img/youtube.png" alt="">
+                                </a>
+                            </li>
+                        </ul> 
+                        <p class="d-none d-lg-block">
+                                Разработано специально для&nbsp;коучинга WAYUP
+                        </p>
+                    </div>     
+                </div>
+                <div class="col-lg-2 col-md-2 col-auto">
+                    <nav>
+                        <h5 class="foot-title">
+                            Меню
+                        </h5>
+                        <ul class="foot-menu">
+                            <li class="foot-menu__item">
+                                <a href="index.html">
+                                        Главная
+                                </a>
+                            </li>
+                            <li class="foot-menu__item">
+                                <a href="company.html">
+                                        О компании
+                                </a>
+                            </li>
+                              <li class="foot-menu__item">
+                                  <a href="#">
+                                        Отзывы
+                                 </a>
+                             </li>
+                            <li class="foot-menu__item">
+                                 <a href="#">
+                                        Новости
+                                 </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-4 offset-md-1 offset-lg-0 col-auto">
+                    <div class="foot-wrap">
+                       <h5 class="foot-title">
+                            Контакты
+                        </h5>
+                        <ul class="foot-connect">
+                            <li class="foot-connect__item d-flex align-items-start">
+                                <img src="img/map.png" alt="" class="foot-connect__img">
+                                <a href="" class="foot-connect__map">
+                                        г. Москва, ул. Бутырская, 62
+                                        Z-Plaza, 5-й этаж
+                                </a>
+                            </li>
+                            <li class="foot-connect__item d-flex align-items-start">
+                                 <img src="img/phone.png" alt="" class="foot-connect__img ">
+                                 <div class="phones ">
+                                    <a href="tel:+ 74955771811" class="foot-connect__phone">
+                                        + 7 (495) 577-18-11
+                                        
+                                    </a>
+                                    <a href="tel:+74955672815" class="foot-connect__phone">
+                                      + 7 (495) 567-28-15
+                                     </a>
+                                 </div>
+                            
+                            </li class="foot-connect__item">
+                             <li>
+                                    <img src="img/mail.png" alt="" class="foot-connect__img">
+                                     <a href="mailto:JClegal@gmail.com" class="foot-connect__mail">
+                                        JClegal@gmail.com
+                                    </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <form action="#" class="form">
+                        <h5 class="foot-title">
+                            Подписаться на рассылку новостей
+                        </h5>
+                        <input type="email" name="e-mail" placeholder="Ваш e-mail" class="form-input ">
+                        <a href="#" class="foot-btn btn">
+                            Подписаться
+                        </a>
+                    </form>
+                </div>
+                <div class="col d-lg-none text-center food-text">
+                    Разработано специально для коучинга WAYUP
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="foot-law">
+                       <p>
+                            © 2007-2020 Все права защищены
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
